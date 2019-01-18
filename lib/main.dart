@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'bottom_appBar_demo.dart';
+import 'tool_tips_demo.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.lightBlue,
       ),
-      home: BottomAppBarDemo(),
+      home: ToolTipDemo(),
     );
   }
 }

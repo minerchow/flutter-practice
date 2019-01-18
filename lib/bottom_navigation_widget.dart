@@ -9,6 +9,7 @@ class BottomNavigationWidget extends StatefulWidget {
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   final _BottomNavigationColor = Colors.blue;
   int _currentIndex = 0;
+  //flutter中List代表数组
   List<Widget> list = List();
   @override
   void initState(){

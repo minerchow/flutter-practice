@@ -22,6 +22,9 @@ class _BottomAppBarDemoState extends State<BottomAppBarDemo> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           //print('22');
+          Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context){
+              return EachView('New Page');
+          }));
         },
         tooltip: 'Increment',
         child: Icon(Icons.add,color: Colors.white),
@@ -38,12 +41,18 @@ class _BottomAppBarDemoState extends State<BottomAppBarDemo> {
                   icon:Icon(Icons.home),
                   color:Colors.white,
                   onPressed:(){
+                    setState(() {
+                      _index=0;
+                    });
                   }
               ),
               IconButton(
                   icon:Icon(Icons.airport_shuttle),
                   color:Colors.white,
                   onPressed:(){
+                    setState(() {
+                      _index=1;
+                    });
                   }
               ),
             ],
